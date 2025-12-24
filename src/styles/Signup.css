@@ -1,0 +1,149 @@
+.signup-container {
+  padding: 70px 32px 60px;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.signup-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.signup-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.4;
+}
+
+.badge {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #FBB040;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  margin-left: 10px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.signup-form::-webkit-scrollbar {
+  display: none;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.required {
+  color: #ff0000;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #5526DB;
+  background-color: #fff;
+}
+
+.form-input::placeholder {
+  color: #aaa;
+}
+
+.radio-group {
+  display: flex;
+  gap: 40px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #444;
+}
+
+.radio-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  accent-color: #5526DB;
+}
+
+.submit-btn {
+  margin-top: auto;
+  width: 100%;
+  padding: 18px;
+  background: #5526DB;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .signup-title {
+    font-size: 26px;
+  }
+
+  .badge {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 360px) {
+  .signup-title {
+    font-size: 24px;
+  }
+
+  .badge {
+    width: 26px;
+    height: 26px;
+    font-size: 15px;
+    line-height: 26px;
+  }
+}

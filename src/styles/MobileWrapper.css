@@ -1,0 +1,11 @@
+.mobile-container {
+    width: 100%;
+    max-width: 390px;
+    height: calc(100dvh - 32px);
+    background: #ffffff;
+    border-radius: 32px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}

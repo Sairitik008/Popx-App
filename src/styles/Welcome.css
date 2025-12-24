@@ -1,0 +1,166 @@
+.welcome-screen {
+    padding: 70px 32px 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.dots {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    margin: 0 auto 50px;
+    flex-shrink: 0;
+}
+
+.dot {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fbb040;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 12px rgba(251, 176, 64, 0.35);
+    transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+    background-color: #5682e8;
+}
+
+.dot-6 {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    top: 30px;
+    left: 70px;
+}
+
+.dot-1 {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot-2 {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    top: 150px;
+    left: 64%;
+}
+
+.dot-3 {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    top: 200px;
+    left: 73%;
+}
+
+.dot-4 {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    top: 250px;
+    left: 80%;
+}
+
+.dot-5 {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    top: 300px;
+    left: 86%;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.main-content h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.main-content p {
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.7;
+    margin: 0;
+    text-align: center;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+    flex-shrink: 0;
+}
+
+.btn {
+    width: 100%;
+    padding: 18px;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.btn.create-account {
+    background-color: #5526DB;
+    color: white;
+    box-shadow: 0 8px 20px rgba(85, 38, 219, 0.3);
+}
+
+.btn.create-account:hover {
+    background-color: #471dbb;
+    transform: translateY(-2px);
+}
+
+.btn.already-login {
+    background-color: #E9E1FF;
+    color: #5526DB;
+}
+
+.btn.already-login:hover {
+    background-color: #d8ccff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .main-content h1 {
+        font-size: 24px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    .main-content h1 {
+        font-size: 22px;
+    }
+}
